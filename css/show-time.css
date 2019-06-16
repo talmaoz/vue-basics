@@ -1,7 +1,18 @@
 .show-time {
-    max-width: 500px;
-    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    /*align-content: center;*/
+    justify-content: space-around;
     margin: 0 auto;
+    padding: 5px;
+}
+
+.flex-col-container{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .dark-mode {
@@ -16,7 +27,36 @@
     border: 3px solid midnightblue;
 }
 
-.show-time img {
-    width: 300px;
+.season-img, .time-display {
+    margin: 5px;
+    /*Disable image select (it changes the background of the image):*/
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
+.season-img {
+    background-image: url("../img/seasons.png");
+    /*background-size: 100%;*/
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+}
+
+.winter {
+    background-position: 1% 48%;
+}
+
+.spring {
+    background-position: 33% 60%;
+}
+
+.summer{
+    background-position: 67% 60%;
+}
+
+.fall {
+    background-position: 100% 42%;
+}

@@ -1,6 +1,14 @@
 
 let timeDisplayInterval;
-let timeDisplayOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+let timeDisplayOptions = {
+    weekday: 'long'   ,
+    year   : 'numeric',
+    month  : 'long'   ,
+    day    : 'numeric',
+    hour   : 'numeric',
+    minute : 'numeric',
+    second : 'numeric'
+};
 const SUMMER = 1
 const WINTER = 2
 const FALL   = 3
@@ -11,16 +19,19 @@ Vue.component('show-time', {
         <section 
             class="show-time"
             v-bind:class="darkOrBrightMode"
-            v-on:click="toggleDarkMode()">
-            <div class="time-display">{{time}}</div>
-            <img src="./img/seasons.png" alt="" v-bind:class="seasonClass"/>     
+            v-on:click="toggleDarkMode()"
+            >
+            <div class="flex-col-container">
+                <div class="time-display">{{time}}</div>
+                <div class="season-img" v-bind:class="seasonClass"></div>
+            </div> 
         </section>
     `,
     data() {
         return {
             time     : (new Date()).toLocaleDateString("en-US", timeDisplayOptions),
             darkMode : false,
-            season: SUMMER,
+            season: FALL,
         }
     },
     methods: {
