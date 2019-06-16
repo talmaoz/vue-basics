@@ -1,0 +1,8 @@
+{
+  "name": "proj-vue1",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "vue": "^2.6.10"
+  }
+}

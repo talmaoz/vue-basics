@@ -1,0 +1,19 @@
+
+/* Components CSS */
+@import './counter.css';
+@import './user-details.css';
+@import './show-time.css';
+
+
+body {
+    background-color: lightgreen;
+}
+
+.more-info {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.todo-done {
+    text-decoration: line-through;
+}
