@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8578354d-504b-483e-bad6-79b33b3d287c" name="Default Changelist" comment="" />
+    <list default="true" id="8578354d-504b-483e-bad6-79b33b3d287c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../vue-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/css/show-time.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/css/show-time.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js" afterDir="false" />
+    </list>
     <ignored path="C:\GitProjects\vue-1\vue-proj\dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,20 +27,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="247">
+              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../vue-basics/css/show-time.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+            <state relative-caret-position="1240">
+              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -54,7 +58,12 @@
       <find>changeCounter</find>
       <find>user-details</find>
       <find>time-display</find>
+      <find>time</find>
+      <find>seasonClass</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../vue-basics" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -66,8 +75,8 @@
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/user-details.cmp.js" />
         <option value="$PROJECT_DIR$/../vue-basics/index.html" />
         <option value="$PROJECT_DIR$/../vue-basics/css/main.css" />
-        <option value="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js" />
         <option value="$PROJECT_DIR$/../vue-basics/css/show-time.css" />
+        <option value="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js" />
       </list>
     </option>
   </component>
@@ -76,6 +85,7 @@
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -156,12 +166,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560690733273</updated>
-      <workItem from="1560690734878" duration="8479000" />
+      <workItem from="1560690734878" duration="12039000" />
     </task>
+    <task id="LOCAL-00001" summary="Sprite satisfactory">
+      <created>1560699419985</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560699419985</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8479000" />
+    <option name="totallyTimeSpent" value="12039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -175,7 +193,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -188,6 +206,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Sprite satisfactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sprite satisfactory" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../vue-basics/css/user-details.css">
@@ -234,17 +256,17 @@
     <entry file="file://$PROJECT_DIR$/../vue-basics/img/seasons.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js">
+    <entry file="file://$PROJECT_DIR$/../vue-basics/css/show-time.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="1240">
+          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../vue-basics/css/show-time.css">
+    <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="247">
+          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
         </state>
       </provider>
     </entry>

@@ -28,13 +28,18 @@
 }
 
 .season-img, .time-display {
-    margin: 5px;
+    margin: 5px auto;
     /*Disable image select (it changes the background of the image):*/
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+}
+
+.time-display {
+    height: 38px;
+    text-align: center;
 }
 
 .season-img {
@@ -54,9 +59,9 @@
 }
 
 .summer{
-    background-position: 67% 60%;
+    background-position: 65% 60%;
 }
 
 .fall {
-    background-position: 100% 42%;
+    background-position: 97% 42%;
 }

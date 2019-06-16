@@ -1,6 +1,6 @@
 
 let timeDisplayInterval;
-let timeDisplayOptions = {
+const timeDisplayOptions = {
     weekday: 'long'   ,
     year   : 'numeric',
     month  : 'long'   ,
@@ -22,22 +22,23 @@ Vue.component('show-time', {
             v-on:click="toggleDarkMode()"
             >
             <div class="flex-col-container">
-                <div class="time-display">{{time}}</div>
+                <div class="time-display">{{currTime}}</div>
                 <div class="season-img" v-bind:class="seasonClass"></div>
             </div> 
         </section>
     `,
     data() {
         return {
-            time     : (new Date()).toLocaleDateString("en-US", timeDisplayOptions),
+            currTime : timeToString(getCurrTime()),
             darkMode : false,
-            season: FALL,
+            season   : getSeason(getCurrTime()),
         }
     },
     methods: {
         toggleDarkMode() {
             this.darkMode = !this.darkMode
-        }
+        },
+
     },
     computed: {
         darkOrBrightMode() {
@@ -56,18 +57,30 @@ Vue.component('show-time', {
         }
     },
     created() {
-        console.log('Counter component Was Created');
         timeDisplayInterval = setInterval(()=>{
-            // console.log('INTERVAL IS RUNNING');
-            // this.counter++
+            let currTime = getCurrTime()
+            this.currTime = timeToString(currTime)
+            this.season = getSeason(currTime)
         }, 1000)
     },
-    mounted() {
-        console.log('MOunted to DOM');
-    },
     destroyed() {
-        console.log('Counter cmp destroyed');
         clearInterval(timeDisplayInterval);
     }
 })
 
+function getCurrTime() {
+    return new Date()
+}
+
+function getSeason(time) {
+    let month = time.getMonth() + 1
+    // Simplified season:
+    if (month === 1  || month === 2  || month === 3 ) return WINTER
+    if (month === 4  || month === 5  || month === 6 ) return SPRING
+    if (month === 7  || month === 8  || month === 9 ) return SUMMER
+    if (month === 10 || month === 11 || month === 12) return FALL
+}
+
+function timeToString(time) {
+    return time.toLocaleDateString("en-US", timeDisplayOptions)
+}
