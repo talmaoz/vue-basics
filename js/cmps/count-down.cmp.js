@@ -14,22 +14,23 @@ Vue.component('count-down', {
     `,
     data() {
         return {
-            timeLeft : timeToString(this.timeout - getCurrTime()),
+            timeLeft : timeToString(this.timeout),
         }
     },
     props: ['timeout'],
     methods: {
         startCountDown() {
-            let milisecsLeft = this.timeout - getCurrTime()
-            this.timeLeft = timeToString(milisecsLeft)
+            let timeWhenClicked = Date.now()
             countDownInterval = setInterval(()=>{
-                let milisecsLeft = this.timeout - getCurrTime()
+                let timePassed = Date.now() - timeWhenClicked
+                let milisecsLeft = this.timeout - timePassed
+                // Rounding to 1000's:
+                milisecsLeft = Math.round(milisecsLeft/1000)*1000
+                this.timeLeft = timeToString(milisecsLeft)
                 if (milisecsLeft <= 0) {
                     this.$emit('counter-done', '');
                     clearInterval(countDownInterval)
-                    return
                 }
-                this.timeLeft = timeToString(milisecsLeft)
             }, 1000)
         },
     },
@@ -51,10 +52,6 @@ Vue.component('count-down', {
         clearInterval(countDownInterval);
     }
 })
-
-function getCurrTime() {
-    return new Date()
-}
 
 function timeToString(time) {
     let seconds = Math.floor(time/1000)%60

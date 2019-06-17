@@ -12,15 +12,16 @@
 <body>
 
     <div id="app">
-        <show-time></show-time>
+        <show-time
+            v-bind:timerdone="isCounterDone"
+            >
+        </show-time>
         <count-down
-            v-bind:timeout="Date.now() + 1000*60*0.15"
+            v-bind:timeout="COUNTDOWN"
             v-on:counter-done="counterDone"
             >
-        </count-down>>
-
+        </count-down>
     </div>
-
 
     <script src="lib/vue.js"></script>
     <script type="module" src="js/main.js"></script>

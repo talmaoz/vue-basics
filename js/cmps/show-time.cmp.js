@@ -19,8 +19,8 @@ Vue.component('show-time', {
     template: `
         <section 
             class="show-time"
-            v-bind:class="darkOrBrightMode"
-            v-on:click="toggleDarkMode()"
+            v-bind:class="[darkOrBrightMode, counterDone]"
+            v-on:click="toggleDarkMode"
             >
             <div class="flex-col-container">
                 <div class="time-display">{{currTime}}</div>
@@ -28,6 +28,7 @@ Vue.component('show-time', {
             </div> 
         </section>
     `,
+    props: ['timerdone'],
     data() {
         return {
             currTime : timeToString(getCurrTime()),
@@ -45,6 +46,11 @@ Vue.component('show-time', {
             return {
                 'dark-mode'   :  this.darkMode,
                 'bright-mode' : !this.darkMode,
+            }
+        },
+        counterDone() {
+            return {
+                'counter-done-mode' : this.timerdone
             }
         },
         seasonClass() {

@@ -13,14 +13,15 @@ var app = new Vue({
         console.log('App has been Mounted!');
     },
     data: {
-
+        COUNTDOWN : 1000*60*0.15,
+        isCounterDone : false,
     },
     computed: {
-
+        // Computed
     },
     methods: {
         counterDone() {
-            console.log('Hello there')
+            this.isCounterDone = true
         }
     }
 })
