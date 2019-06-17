@@ -1,3 +1,4 @@
+'use strict'
 
 let timeDisplayInterval;
 const timeDisplayOptions = {
@@ -9,10 +10,10 @@ const timeDisplayOptions = {
     minute : 'numeric',
     second : 'numeric'
 };
-const SUMMER = 1
-const WINTER = 2
-const FALL   = 3
-const SPRING = 4
+const SUMMER = 100
+const WINTER = 200
+const FALL   = 300
+const SPRING = 400
 
 Vue.component('show-time', {
     template: `
@@ -38,7 +39,6 @@ Vue.component('show-time', {
         toggleDarkMode() {
             this.darkMode = !this.darkMode
         },
-
     },
     computed: {
         darkOrBrightMode() {
@@ -49,10 +49,10 @@ Vue.component('show-time', {
         },
         seasonClass() {
             return {
-                'winter'   :  this.season === WINTER,
-                'summer'   :  this.season === SUMMER,
-                'fall'     :  this.season === FALL,
-                'spring'   :  this.season === SPRING,
+                'winter' : this.season === WINTER,
+                'summer' : this.season === SUMMER,
+                'fall'   : this.season === FALL,
+                'spring' : this.season === SPRING,
             }
         }
     },

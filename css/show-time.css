@@ -4,8 +4,9 @@
     flex-direction: row;
     /*align-content: center;*/
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 5px auto;
     padding: 5px;
+    cursor: pointer;
 }
 
 .flex-col-container{

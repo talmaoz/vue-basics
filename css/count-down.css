@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.count-down {
+    max-width: 200px;
+    height: 194px;
+    display: flex;
+    flex-direction: row;
+    /*align-content: center;*/
+    justify-content: space-around;
+    margin: 5px auto;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 3px solid midnightblue;
+    cursor: pointer;
+}
+
+.flex-col-container{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.count-down-display {
+    color: midnightblue;
+    font-size: 30px;
+    /*Disable image select (it changes the background of the image):*/
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.lastTenSecs{
+    color: red;
+}

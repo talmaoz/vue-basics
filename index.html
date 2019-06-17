@@ -13,6 +13,11 @@
 
     <div id="app">
         <show-time></show-time>
+        <count-down
+            v-bind:timeout="Date.now() + 1000*60*0.15"
+            v-on:counter-done="counterDone"
+            >
+        </count-down>>
 
     </div>
 
