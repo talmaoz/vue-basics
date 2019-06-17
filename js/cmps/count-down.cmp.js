@@ -6,7 +6,7 @@ Vue.component('count-down', {
     template: `
         <section 
             class="count-down"
-            v-on:click="startCountDown()">
+            v-on:click.once="startCountDown()">
             <div class="flex-col-container">
                 <div class="count-down-display" v-bind:class="lastTenSecsOrNot">{{timeLeft}}</div>
             </div> 
