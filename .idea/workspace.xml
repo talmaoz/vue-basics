@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8578354d-504b-483e-bad6-79b33b3d287c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../vue-basics/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/css/counter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/css/user-details.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-basics/js/cmps/count-down.cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/js/cmps/count-down.cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/js/cmps/my-counter.cmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vue-basics/js/cmps/user-details.cmp.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../vue-basics/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../vue-basics/js/main.js" afterDir="false" />
     </list>
     <ignored path="C:\GitProjects\vue-1\vue-proj\dist/" />
@@ -36,23 +41,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/count-down.cmp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="557">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../vue-basics/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <element signature="e#16#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../vue-basics/js/main.js">
+        <entry file="file://$PROJECT_DIR$/../vue-basics/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-              <folding>
-                <element signature="e#15#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -98,13 +112,13 @@
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/my-counter.cmp.js" />
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.js" />
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/user-details.cmp.js" />
-        <option value="$PROJECT_DIR$/../vue-basics/css/main.css" />
         <option value="$PROJECT_DIR$/../vue-basics/css/count-down.css" />
         <option value="$PROJECT_DIR$/../vue-basics/index.html" />
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/show-time.cmp.js" />
         <option value="$PROJECT_DIR$/../vue-basics/css/show-time.css" />
-        <option value="$PROJECT_DIR$/../vue-basics/js/main.js" />
         <option value="$PROJECT_DIR$/../vue-basics/js/cmps/count-down.cmp.js" />
+        <option value="$PROJECT_DIR$/../vue-basics/js/main.js" />
+        <option value="$PROJECT_DIR$/../vue-basics/css/main.css" />
       </list>
     </option>
   </component>
@@ -141,13 +155,7 @@
             <path>
               <item name="vue-basics" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="cmps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vue-basics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vue-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,7 +199,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560690733273</updated>
-      <workItem from="1560690734878" duration="26843000" />
+      <workItem from="1560690734878" duration="28361000" />
     </task>
     <task id="LOCAL-00001" summary="Sprite satisfactory">
       <created>1560699419985</created>
@@ -221,15 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1560761330825</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".once added so clicking on the timer will only work once...&#10;&#10;and some minor changes">
+      <created>1560765139601</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560765139602</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26843000" />
+    <option name="totallyTimeSpent" value="28361000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
@@ -258,7 +272,8 @@
     <MESSAGE value="Season working and unit tested" />
     <MESSAGE value="count-down cmp WIP" />
     <MESSAGE value="count-down cmp completed, and due event affects show-time cmp" />
-    <option name="LAST_COMMIT_MESSAGE" value="count-down cmp completed, and due event affects show-time cmp" />
+    <MESSAGE value=".once added so clicking on the timer will only work once...&#10;&#10;and some minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value=".once added so clicking on the timer will only work once...&#10;&#10;and some minor changes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/user-details.cmp.js">
@@ -278,13 +293,6 @@
     <entry file="file://$PROJECT_DIR$/../vue-basics/img/seasons.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../vue-basics/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../vue-basics/css/user-details.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -299,16 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../vue-basics/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="e#15#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -328,8 +326,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../vue-basics/js/cmps/count-down.cmp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="557">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../vue-basics/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../vue-basics/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#16#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

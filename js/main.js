@@ -1,7 +1,5 @@
 'use strict';
 
-import './cmps/my-counter.cmp.js';
-import './cmps/user-details.cmp.js';
 import './cmps/show-time.cmp.js';
 import './cmps/count-down.cmp.js';
 
